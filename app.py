@@ -11,7 +11,7 @@ data = [{
 }
 ]
 @app.route('/')
-def hello_world():
+def getTodo():
     return jsonify(data)
 @app.route("/todo", methods=["POST"])
 def addTodo():
